@@ -3,7 +3,6 @@ FROM python:3.8
 WORKDIR /app
 COPY . .
 RUN pip install --no-cache-dir -e .
-RUN pip install gunicorn
 WORKDIR /app/urlshortener
 
 EXPOSE 8080
