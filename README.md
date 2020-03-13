@@ -14,6 +14,8 @@ tox -epy38,pep8
 
 qovery run
 
+curl http://127.0.0.1:8000/redoc
+
 curl http://127.0.0.1:8000/encode -X POST -d '{url: "https://sileht.net"}'
 curl http://127.0.0.1:8000/xxxxxxx -v
 
