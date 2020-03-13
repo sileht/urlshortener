@@ -7,3 +7,6 @@ cover
 dist
 .eggs
 .pytest_cache
+
+.qovery
+local_configuration.json

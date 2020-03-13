@@ -3,13 +3,13 @@ application:
   project: urlshortener
   cloud_region: aws/eu-west-3
   publicly_accessible: true
-routers:
-- name: main
-  routes:
-  - application_name: urlshortener
-    paths:
-    - /*
 databases:
 - type: postgresql
   version: "11.5"
-  name: pg-urlshortner
+  name: my-postgresql-3498225
+routers:
+- name: main
+  routes:
+  - application_name: exo
+    paths:
+    - /*
