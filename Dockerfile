@@ -6,4 +6,4 @@ RUN pip install --no-cache-dir -e .
 WORKDIR /app/urlshortener
 
 EXPOSE 8080
-CMD ["gunicorn", "main:app", "-w", "4", "-k", "uvicorn.workers.UvicornWorker", "-p", "8080"]
+CMD ["gunicorn", "main:app", "-w", "4", "-k", "uvicorn.workers.UvicornWorker", "-b", "0.0.0.0:8080"]
