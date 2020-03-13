@@ -17,9 +17,11 @@ logging.basicConfig()
 LOG = logging.getLogger(__name__)
 
 DATABASE_TEST_PORT = os.getenv("DATABASE_TEST_PORT", 12345)
-DATABASE_URL = os.getenv(
-    "DATABASE_URL", f"postgresql://test:test@127.0.0.1:{DATABASE_TEST_PORT}/test"
-)
+DATABASE_URL = os.getenv("QOVERY_DATABASE_MY_POSTGRESSQL_CONNECTION_URI")
+if not DATABASE_URL:
+    DATABASE_URL = os.getenv(
+        "DATABASE_URL", f"postgresql://test:test@127.0.0.1:{DATABASE_TEST_PORT}/test"
+    )
 
 app = FastAPI()
 

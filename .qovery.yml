@@ -9,3 +9,7 @@ routers:
   - application_name: urlshortener
     paths:
     - /*
+databases:
+- type: postgresql
+  version: "11.5"
+  name: pg-urlshortner
