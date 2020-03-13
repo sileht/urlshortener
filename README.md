@@ -22,6 +22,9 @@ curl http://127.0.0.1:8080/xxxxxxx -v
 ```
 
 ## deploy it
+
+```bash
 git push
 qovery auth
 qovery status
+```
